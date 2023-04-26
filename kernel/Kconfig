@@ -24,6 +24,13 @@ config KSU_DEBUG
 	help
 	  Enable KernelSU debug mode.
 
+config KSU_SAFE_MODE
+ 	int "KernelSU Safe Mode"
+ 	default 0
+ 	depends on KSU
+ 	help
+ 	This enables KernelSU Safe Mode.
+
 config KSU_ALLOWLIST_WORKAROUND
         bool "KernelSU Session Keyring Init workaround"
         depends on KSU
